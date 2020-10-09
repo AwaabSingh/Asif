@@ -1,0 +1,143 @@
+
+.text .heading {
+    text-align:  center;
+    margin: 10px;
+}
+/* .cards {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    font-family: sans-serif;
+    padding-top: 30px;
+   
+}
+
+.card:hover {
+    transform: scale(1.1);
+  
+}
+.cards * {
+    box-sizing: border-box;
+}
+
+.card__image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-top: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+    border-radius: 5px;
+}
+
+.card__content {
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #fafafa;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+.card__content > p:first-of-type {
+    margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+    margin-bottom: 0;
+}
+
+.card__info {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    background: #eeeeee;
+    font-size: 0.8em;
+    border-bottom: 2px solid #333333;
+    border-right: 2px solid #333333;
+    border-left: 2px solid #333333;
+}
+
+ */
+
+.bod {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.our-team{
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+.our-team img{
+    width: 100%;
+    height: 100%;
+}
+.our-team .content{
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 45%;
+    transform: perspective(400px) rotateX(-90deg);
+    transform-origin: center top 0;
+    transition: all 0.5s ease 0s;
+    opacity: 0;
+}
+.our-team:hover .content,
+.our-team.active .content{
+    opacity: 1;
+    transform: perspective(400px) rotateX(0deg);
+}
+.our-team .content .title{
+    margin: 0 0 10px;
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+}
+.our-team .content .post{
+    margin: 0 0 25px;
+    display: block;
+    font-size: 15px
+}
+.our-team .social{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.our-team .social li{
+    display: inline-block;
+}
+.our-team .social li a{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-radius: 0;
+    background-color: #F32248;
+    margin-right: 5px;
+    transition: all 0.5s ease 0s;
+    position: relative;
+}
+.our-team .social li a:hover, .our-team.active .social li a{
+    border-radius: 50%;
+    text-decoration: none;
+}
+@media screen and (max-width: 990px){
+    .our-team{
+        margin-bottom: 30px;
+    }
+}
+
+ 

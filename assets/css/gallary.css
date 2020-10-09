@@ -1,0 +1,29 @@
+.heading {
+    text-align:  center;
+    margin: 10px;
+    color: lightsalmon;
+}
+.gallery {
+  margin: 10px 50px;
+}
+.gallery a img {
+  width: 30%;
+  transition: 1s;
+  padding: 15px;
+}
+.gallery a img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 479px) {
+  .gallery a img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .gallery a img {
+    width: 100%;
+  }
+}
